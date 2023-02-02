@@ -1,0 +1,39 @@
+1)To display the name of all activities with their Codes in descending order.
+=> Select ActivityName from Activity order by ACode DESC;
+
+   ACTIVITYNAME
+   --------------------
+   Discuss Throw
+   Long Jump
+   Shot Put
+   High Jump
+   Relay 100X4
+
+2)To display sum of prize money for each of the number of participants groupings (as shown in column ParticipantsNum 10,12,16)
+=> Select PrizeMoney/ParticipantsNum as "Prize money per participant" from Activity;
+
+	Prize money per participant
+	---------------------------
+			   625
+     	 	             1200
+       	              666.666667
+                      	               750
+                                    1500
+
+
+3)To display the coach’s name and ACodes in ascending order of ACode from the table COACH.
+=>  Select Name , Acode from Coach order by ACode ;
+
+	NAME                      ACODE
+	-----------------            ----------
+	Ahmed Hussain           1001
+	Janila                           1001
+	Naaz                            1003
+	Ranvinder                    1008
+
+
+4)To display the content of the Activity table whose ScheduleDate is earlier than 01/01/2004 in ascending order of ParticipantsNum
+=>  Select * from Activity where ScheduleDate<'01-Jan-2004' order by ParticipantsNum;
+          ACODE     ACTIVITYNAME        PARTICIPANTSNUM    PRIZEMONEY   SCHEDULED
+	----------     --------------------              ---------------                    ----------              ---------
+      	1002           High Jump                         10                            12000           12-DEC-03

@@ -1,0 +1,16 @@
+1)To show all information about the Baby cots from the FURNITURE table
+  =>Select * from furniture where type = 'Baby cot';
+
+2)To list the ITEMNAME which are priced at more than 15000 from the FURNITURE table
+  =>Select itemname from furniture where price>15000;
+
+4)To list ITEMNAME and TYPE of those items, in which date of stock is before 22/01/02 
+  from the FURNITURE table in the descending order of ITEMNAM
+  => Select itemname, type from furniture where dateofstock<'22-jan-02' order by 
+     itemname DESC;
+
+
+6)To display ITEMNAME and DATAOFSTOCK of those items, whose TYPE is “ Sofa” from
+  FURNITURE table
+  =>Select itemname , type from furniture where type = 'Sofa';
+
